@@ -1,3 +1,7 @@
+"""
+This module provides functions to decode Morse code into text.
+"""
+
 from morse.mapping import MORSE
 
 # Reverse the MORSE dictionary: ".-" -> "A"
@@ -38,4 +42,3 @@ if __name__ == "__main__":
     # Example usage for one sentence
     MORSE_SENTENCE = ".... ..|--. ..- -.-- ..."
     print(decode(MORSE_SENTENCE))   # HI GUYS
-

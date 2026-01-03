@@ -20,8 +20,7 @@ def encode(text):
     for word in words:
         encoded_words.append(encode_word(word))
 
-    return "|".join(encoded_words)                    
-
+    return "|".join(encoded_words)
 
 def encode_word(word):
     """
@@ -34,7 +33,7 @@ def encode_word(word):
         if letter in MORSE:
             morse_letters.append(MORSE[letter])
 
-    return " ".join(morse_letters)        
+    return " ".join(morse_letters)
 
 if __name__ == "__main__":
     # Example usage for one word
